@@ -1,7 +1,7 @@
-const Employee = require('../lib/Intern');
+const Intern = require('../lib/Intern');
 
 test('create Intern object', () => {
-    const intern = new Intern('mitch', 4, 'mitch@test.com', 'whitewater')
+    const intern = new Intern('Intern', 'mitch', 4, 'mitch@test.com', 'whitewater')
 
     // test to check if name is a string
     expect(intern.name).toBe('mitch');
@@ -12,10 +12,11 @@ test('create Intern object', () => {
 
     // test to check if school is string
     expect(intern.school).toEqual(expect.any(String));
+    expect(intern.role).toEqual(expect.any(String));
 
-    expect(engineer.getName()).toBe('mitch');
-    expect(engineer.getId()).toBe(14);
-    expect(engineer.getEmail()).toBe('mitch@test.com');
-    expect(engineer.getRole()).toBe('intern');
+    expect(intern.getName()).toBe('mitch');
+    expect(intern.getId()).toBe(4);
+    expect(intern.getEmail()).toBe('mitch@test.com');
+    expect(intern.getRole()).toBe('Intern');
 
 });

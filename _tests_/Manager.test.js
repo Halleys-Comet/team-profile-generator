@@ -1,8 +1,8 @@
 const { test, expect } = require('@jest/globals')
-const Employee = require('../lib/Manager')
+const Manager = require('../lib/Manager')
 
 test('create Manager object', () => {
-    const manager = new Manager('tom', 3, 'tom@test.com', '823')
+    const manager = new Manager('Manager', 'tom', 3, 'tom@test.com', 823)
 
     // test to check if name is a string
     expect(manager.name).toBe('tom');
@@ -12,10 +12,11 @@ test('create Manager object', () => {
     expect(manager.email).toEqual(expect.any(String));
 
     // test to check if officenumber is string
-    expect(manager.officenumber).toEqual(expect.any(Number));
+    expect(manager.officeNumber).toEqual(expect.any(Number));
+    expect(manager.role).toEqual(expect.any(String));
 
-    expect(engineer.getName()).toBe('tom');
-    expect(engineer.getId()).toBe(14);
-    expect(engineer.getEmail()).toBe('tom@test.com');
-    expect(engineer.getRole()).toBe('Manager');
+    expect(manager.getName()).toBe('tom');
+    expect(manager.getId()).toBe(3);
+    expect(manager.getEmail()).toBe('tom@test.com');
+    expect(manager.getRole()).toBe('Manager');
 });
