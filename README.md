@@ -2,25 +2,10 @@
 
 ## Description 
 
-
-
-## Table of Contents (Optional)
-
-If your README is very long, add a table of contents to make it easy for users to find what they need.
-
-* [Installation](#installation)
-* [Usage](#usage)
-* [Credits](#credits)
-* [License](#license)
-
+This is a place for you to create a webpage for your work team. You are able to enter information for your team with three different types of employees. The name, role, email and Id are shown once you answer each question. 
 
 ## Installation
 
 
-
 ## Usage 
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them.
 
