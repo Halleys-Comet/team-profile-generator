@@ -1,7 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-
+let team = [];
 // questions for user
 const questions = [
 
@@ -30,6 +30,8 @@ const questions = [
         name: 'email',
         message: "What is the employee's email?",
 
+        // Got this from https://gist.github.com/Amitabh-K/ae073eea3d5207efaddffde19b1618e8 had to adjust to work for assignment
+
         validate: function (email) {
 
             valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
@@ -41,6 +43,9 @@ const questions = [
             return true;
         }
     },
+
+    // Manager question
+
     {
         type: 'input',
         name: 'office',
@@ -48,6 +53,8 @@ const questions = [
         validate: (office => (office ? true : console.log("Please enter the manager's office number"))),
         when: ({ role }) => (role === 'Manager' ? true : false)
     },
+
+    // Engineer question
     {
         type: 'input',
         name: 'github',
@@ -55,6 +62,7 @@ const questions = [
         validate: (github => (github ? true : console.log("Please enter the engineer's username"))),
         when: ({ role }) => (role === 'Engineer' ? true : false)
     },
+    // Intern question
     {
         type: 'input',
         name: 'school',
@@ -63,7 +71,7 @@ const questions = [
         when: ({ role }) => (role === 'Intern' ? true : false)
     },
 
-    // repeat questions 
+    // repeat questions if needed
     {
         type: 'confirm',
         name: 'continue',
@@ -71,6 +79,7 @@ const questions = [
         default: false
     }
 ];
+
 
 module.exports = questions;
 
