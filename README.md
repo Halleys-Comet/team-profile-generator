@@ -22,4 +22,6 @@ This is a place for you to create a webpage for your work team. You are able to 
 
 ## Visual
 
+Click to view example:
+
 https://github.com/Halleys-Comet/team-profile-generator/issues/3#issue-813066203
