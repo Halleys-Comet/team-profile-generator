@@ -1,0 +1,124 @@
+:root {
+    --primary: rgb(46, 245, 39);
+    --secondary: rgb(54, 224, 201);
+    --tertiary: rgb(235, 51, 51);
+    --light: rgb(15, 15, 15);  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    color: var(--light);
+}
+
+header {
+    background-color: rgba(245, 240, 240, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--light);
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.manager,
+.engineer,
+.intern {
+    margin: 20px;
+    flex: 1;
+    border: 3px solid;
+    max-width: 250px;
+    min-width: 290px;
+    max-width: 290px;
+}
+
+.manager h2,
+.engineer h2,
+.intern h2 {
+    padding: 10px 0 5px 10px
+}
+
+.manager h3,
+.engineer h3,
+.intern h3 {
+    padding: 0 0 5px 10px;
+    border-bottom: 3px solid;
+}
+
+.manager div,
+.engineer div,
+.intern div {
+    padding-top: 3px;
+}
+
+.manager div p,
+.engineer div p,
+.intern div p {
+    padding: 2px 10px;
+}
+
+.manager div p a,
+.engineer div p a,
+.intern div p a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.manager {
+    background-color: rgba(200, 245, 39, 0.1);
+    border-color: var(--primary);
+}
+
+.engineer {
+    background-color: rgba(61, 58, 240, 0.1);
+    border-color: var(--secondary);
+}
+
+.intern {
+    background-color: rgba(51, 235, 235, 0.1);
+    border-color: var(--tertiary);
+}
+
+.manager h2,
+.manager h3 {
+    background-color: rgba(63, 245, 39, 0.2);
+}
+
+.engineer h2,
+.engineer h3 {
+    background-color: rgba(54, 113, 224, 0.2);
+}
+
+.intern h2,
+.intern h3 {
+    background-color: rgba(51, 235, 235, 0.2);
+}
+
+.manager h3 {
+    border-color: var(--primary);
+}
+
+.engineer h3 {
+    border-color: var(--secondary);
+}
+
+.intern h3 {
+    border-color: var(--tertiary);
+}
