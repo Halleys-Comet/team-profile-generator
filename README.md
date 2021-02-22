@@ -6,6 +6,20 @@ This is a place for you to create a webpage for your work team. You are able to 
 
 ## Installation
 
+-Download ZIP file and extract files into your project.
+-Open command line and navigate to correct directory
+-Type 'npm init' in command line allowing default values for prompts.
+-Type 'npm install inquirer' in command line to install Inquirer
+-Will need to install Node.js
+
 
 ## Usage 
+
+-In the command line type 'node index.js'
+-Answer prompt questions
+
+-Video of usage: 
+
+## Visual
+
 
